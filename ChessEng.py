@@ -18,8 +18,6 @@ class ChessEng:
 
 		self.engBoard = chess.Board()
 		self.engine = chess.engine.SimpleEngine.popen_engine("/usr/games/stockfish")
-		#self.engine = chess.engine.SimpleEngine.popen_uci("/usr/games/stockfish")
-
 		self.engine.uci()
 		print(self.engBoard)
 
@@ -63,5 +61,6 @@ class ChessEng:
 		
 		print(self.engBoard)
 		return bestMove
+
 
 
